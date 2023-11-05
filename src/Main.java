@@ -13,5 +13,9 @@ public class Main {
             return new ThymeleafTemplateEngine().render(new ModelAndView(model, "index"));
 
         });
+
+        Spark.get("/chat", (request, response) -> {
+            return "Hello! I am a chatbot!";
+        });
     }
 }
