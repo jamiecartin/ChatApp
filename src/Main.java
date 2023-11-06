@@ -15,7 +15,8 @@ public class Main {
         });
 
         Spark.get("/chat", (request, response) -> {
-            return "Hello! I am a chatbot!";
+            HashMap<String, Object> model = new HashMap<>();
+            return new ThymeleafTemplateEngine().render(new ModelAndView(model, "window"));
         });
     }
 }
