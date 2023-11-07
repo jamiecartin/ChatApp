@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05b6c4d7-994c-4221-99b6-e436dd6fc774" name="Changes" comment="basic gui">
-      <change afterPath="$PROJECT_DIR$/src/templates/window.html" afterDir="false" />
+    <list default="true" id="05b6c4d7-994c-4221-99b6-e436dd6fc774" name="Changes" comment="work on chat window">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/window.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/window.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +75,7 @@
       <updated>1699098446317</updated>
       <workItem from="1699098449178" duration="3498000" />
       <workItem from="1699158505096" duration="775000" />
-      <workItem from="1699159349159" duration="17738000" />
+      <workItem from="1699159349159" duration="23169000" />
     </task>
     <task id="LOCAL-00001" summary="Initial setup">
       <created>1699161856701</created>
@@ -112,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1699226305432</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="work on chat window">
+      <created>1699268077198</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699268077198</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +141,7 @@
     <MESSAGE value="Initial setup" />
     <MESSAGE value="add iframe for chat window" />
     <MESSAGE value="basic gui" />
-    <option name="LAST_COMMIT_MESSAGE" value="basic gui" />
+    <MESSAGE value="work on chat window" />
+    <option name="LAST_COMMIT_MESSAGE" value="work on chat window" />
   </component>
 </project>

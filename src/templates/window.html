@@ -12,7 +12,26 @@
 
 </head>
 <body>
-<div>Hi! I'm a chatbot. How can I help you?</div>
+<style>
+  .choice {
+    background-color: #eeeecc;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 4px;
+    padding: 2px 6px;
+    display: inline-block;
+    cursor: pointer;
+  }
+</style>
+<div class="m-4">
+  <div>Hi! I'm a chatbot. I'm here to help!</div>
+  <div>What would you like to do?</div>
+  <div>
+    <a data-choice="joke" class="choice">Tell me a joke.</a>
+    <a data-choice="search" class="choice">Google Search.</a>
+  </div>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
