@@ -24,17 +24,27 @@
   }
 </style>
 <div class="m-4">
-  <div>Hi! I'm a chatbot. I'm here to help!</div>
-  <div>What would you like to do?</div>
-  <div>
-    <a data-choice="joke" class="choice">Tell me a joke.</a>
-    <a data-choice="search" class="choice">Google Search.</a>
+  <div id="conversation">
+    <div>Hi! I'm a chatbot. I'm here to help!</div>
+    <div>What would you like to do?</div>
+    <div>
+      <a onclick="submitChoice(this)" data-choice="joke" class="choice">Tell me a joke.</a>
+      <a onclick="submitChoice(this)" data-choice="search" class="choice">Google Search.</a>
+    </div>
   </div>
 </div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+<script>
+  function submitChoice(el) {
+    let choice = el.dataset.choice;
+    $.post("/chat", {choice}, function(result) {
+      $(result).appendTo($("#conversation"));
+    });
+  }
+</script>
 
 </body>
 </html>

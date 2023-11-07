@@ -18,5 +18,15 @@ public class Main {
             HashMap<String, Object> model = new HashMap<>();
             return new ThymeleafTemplateEngine().render(new ModelAndView(model, "window"));
         });
+
+        Spark.post("/chat", (request, response) -> {
+            String choice = request.queryParams("choice");
+            if ("joke".equals(choice)) {
+                return "<div>That was funny!</div>";
+            } else if ("search".equals(choice)) {
+                return "<div>You found me!</div>";
+            }
+            return "<div>I don't understand!</div>";
+        });
     }
 }
